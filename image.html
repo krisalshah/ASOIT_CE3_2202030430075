@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 400px;
+        height: 600px;
+        display: inline-block;
+    }
+
+    .img1{
+        position: relative;
+    }
+
+    #img2{
+        position:absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #img2:hover{
+    opacity: 1;
+    }
+</style>
+<body>
+
+    <div class="img1">  
+      <img src="img1.jpg" alt="">
+      <div class="img2">
+      <img src="img2.jpg" id="img2">
+     </div>
+    </div>
+</body>
+</html>
